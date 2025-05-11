@@ -1,0 +1,19 @@
+torch==2.0.1+cu120
+ninja==1.10.2
+g++==9.5.0
+opencv-python==4.7.0.72
+pybind11==2.9.2
+numpy
+miniconda
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+ninja
+numpy
+pandas
+scikit-learn
+matplotlib
+tqdm
+# Objects detecting:
+PYTHONPATH=/mnt/d/ADA-VAD:/mnt/d/ADA-VAD/pre_process/flownet_networks/resample2d_package:/mnt/d/
+ADA-VAD/pre_process/flownet_networks/correlation_package:/mnt/d/ADA-VAD/pre_process/flownet_networks/channelnorm_package python extract_bboxes.py --proj_root=/mnt/d/ADA-VAD --dataset_name=avenue --mode=train
