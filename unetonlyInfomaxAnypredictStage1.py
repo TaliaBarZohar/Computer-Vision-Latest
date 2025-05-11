@@ -15,7 +15,7 @@ from argparse import ArgumentParser
 from losses.loss import Gradient_Loss, Intensity_Loss, aggregate_kl_loss
 from datasets.dataset import Chunked_sample_dataset_new, img_batch_tensor2numpy
 
-from models.mem_cvae import HFVAD
+#from models.mem_cvae import HFVAD
 from models.unet import MLP_Projection, GlobalDiscriminator, SelfCompleteNet1raw1ofAnyPredictStage1
 
 from utils.initialization_utils import weights_init_kaiming

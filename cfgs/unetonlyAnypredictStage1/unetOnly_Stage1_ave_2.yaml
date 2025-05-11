@@ -23,12 +23,12 @@ clip_pred: 1
 loss_invariance_weight: 1.0
 
 device: cuda:0
-dataset_base_dir: /data/dongliang/datasets/VAD/Avenue19
+dataset_base_dir: ./data
 dataset_name: avenue
 exp_name: avenue19_crossdomain_stage1_2
-ckpt_root: /data/dongliang/savedmodels/interpretableVAD/ckpt
-log_root: /data/dongliang/savedmodels/interpretableVAD/log
-eval_root: /data/dongliang/savedmodels/interpretableVAD/eval
+ckpt_root: ./savedmodels/ckpt
+log_root: ./savedmodels/log
+eval_root: ./savedmodels/eval
 
 
 crossdomain_dataset_base_dir: /data/dongliang/datasets/VAD

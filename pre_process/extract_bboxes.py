@@ -117,8 +117,8 @@ def getFgBboxes(cur_img, img_batch, bboxes, dataset_name):
 
 def obj_bboxes_extraction(dataset_root, dataset_name, mode):
     # mmdet config file and pre-trained model weights
-    mm_det_config_file = 'assets/cascade_rcnn_r101_fpn_1x_coco.py'
-    mm_det_ckpt_file = 'assets/cascade_rcnn_r101_fpn_1x_coco_20200317-0b6a2fbf.pth'
+    mm_det_config_file = 'pre_process/assets/cascade_rcnn_r101_fpn_1x_coco.py'
+    mm_det_ckpt_file = 'pre_process/assets/cascade_rcnn_r101_fpn_1x_coco_20200317-0b6a2fbf.pth'
 
     dataset = get_dataset(dataset_name=dataset_name,
                           dir=os.path.join(dataset_root, dataset_name),
@@ -159,7 +159,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #
-    dataset_root = "/home/dongliang/datasets/VAD"
+    dataset_root =  "/mnt/d/ADA-VAD/data/"
     #
     obj_bboxes_extraction(dataset_root=dataset_root, # os.path.join(args.proj_root, "data"),
                           dataset_name=args.dataset_name,

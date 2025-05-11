@@ -11,7 +11,6 @@ from pre_process.flownet_networks.submodules import *
 
 'Parameter count = 162,518,834'
 
-
 class FlowNet2(nn.Module):
 
     def __init__(self, rgb_max=255., fp16=False, batchNorm=False, div_flow=20.):
